@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" height="100%">
+            </div>
+            <div class="section">
+                <a href="home.html">HOME</a>
+                <a href="signup.html">SIGN UP</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="content">
+                <h3><U>WELCOME</U></h3>
+               <a herf="#">Our website for late-coming college students! Our website is dedicated to helping students who have missed classes catch up on important lectures, assignments, and other content. We understand that life can be unpredictable, and sometimes you may miss a class due to illness, family emergencies, or other unforeseen circumstances. Our goal is to provide you with the resources and tools you need to stay on track and succeed in your studies, no matter what obstacles you may face.
+            </a>
+            <img src="images/fb_logo.png" height="40%" width="70%">
+            </div>
+        </div>
+        <div class="content2">
+            <div class="selection">
+                <form onsubmit="return validations()" name="form_valid">
+                    <label>Username:<input type="text" class="imp" required name="user_n"></label><br><br>
+                    <label>Password:<input type="password" class="imp" required name="pass"></label><br><br>
+                    <label>
+                        Which lecture you have missed<br>
+                        <select id="raj" name="lac">
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                        </select>
+                    </label><br>
+                    <br><label><input type="submit" class="but"></label>
+                    <label><input type="reset" class="but"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; All right reserved 2023-2024 | Designed by Raj
+    </footer>
+    <style>
+        .main_cont
+        {
+            height: 690px;
+            width: 1460px;
+            float: left;
+        }
+        .header
+        {
+            height:70px;
+            width: 1460px;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            float: left;
+            position: fixed;
+        }
+        .logo
+        {
+            height:70px;
+            width:150px;
+            float: left;
+            
+        }
+        .section 
+        {
+            height: 70px;
+            width: 1000px;
+            margin-left: 305px;
+            margin-top: 20px;
+            
+        }
+        .section a
+        {
+            padding-left: 150px;
+            font-size: 28px;
+            font-weight: bolder;
+            color: cadetblue;
+
+        }
+        .content
+        {
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            height: 560px;
+            width: 305px;
+            background: scroll;
+            font-size: 18px;
+            text-align: center;
+            color: cadetblue;
+        }
+        .content2
+        {
+            background-image: url(images/students_background.jpg);
+            text-decoration: none;
+            height: 595px;
+            width: 1110px;
+            margin-left: 340px;
+            margin-top: 92px;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            text-align: center;
+            position: fixed;
+        }
+        
+        .selection
+        {
+        
+            height: 200px;
+            width: 400px;
+            font-size: 30px;
+            font-weight: bolder;
+            margin-top: 170px;
+            margin-left: 300px;
+            color: white;
+        }
+        .selection select
+        {
+            font-size: 20px;
+            font-weight: bolder;
+            height: 30px;
+            width: 170px;
+            text-align: center;
+            border-radius: 2px;
+            margin-top: 10px;
+        }
+        .imp
+        {
+            width: 170px;
+            height: 30px;
+        }
+        .but
+        {
+            width: 100px;
+            height: 25px;
+        }
+        footer
+        {
+            position: fixed;
+            margin-top: 680px;
+        }
+    </style>
+    <script>
+        function validations()
+        {
+            var name=document.forms["form_valid"]["user_n"].value;
+            var pass=document.forms["form_valid"]["pass"].value;
+            var lacture=document.forms["form_valid"]["lac"].value;
+            console.log(name);
+            console.log(pass);
+            console.log(lacture);
+                    if(lacture=="First")
+                    {
+                        window.location.href="first.html";
+                        return false;
+                    }
+                    if(lacture=="Second")
+                    {
+                        window.location.href="second.html";
+                        return false;
+                    }
+                    if(lacture=="Third")
+                    {
+                        window.location.href="third.html";
+                        return false;
+                    }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" height="100%">
+            </div>
+            <div class="section">
+                <a href="home.html">HOME</a>
+                <a href="signup.html">SIGN UP</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+        </div>
+        <div class="form_cont">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  required><br><br>
+                
+                <label for="roll_no">Roll No:</label>
+                <input type="text" id="roll_no" name="roll_no" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </div>
+    <footer>
+        &copy; All right reserved 2023-2024 | Designed by Raj
+    </footer>
+    <style>
+        .main_cont
+        {
+            height: 690px;
+            width: 1460px;
+            float: left;
+        }
+        .header
+        {
+            height:70px;
+            width: 1460px;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            float: left;
+            position: fixed;
+        }
+        .logo
+        {
+            height:70px;
+            width:150px;
+            float: left;
+            
+        }
+        .section 
+        {
+            height: 70px;
+            width: 1000px;
+            margin-left: 305px;
+            margin-top: 20px;
+            
+        }
+        .section a
+        {
+            padding-left: 150px;
+            font-size: 28px;
+            font-weight: bolder;
+            color: cadetblue;
+
+        }
+        .form_cont {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 500px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+input[type=submit]:hover {
+    background-color: darkcyan;
+}
+footer
+        {
+            position: fixed;
+            margin-top: 680px;
+        }
+
+    </style>
+</body>
+</html>
